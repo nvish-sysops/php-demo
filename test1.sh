@@ -1,5 +1,5 @@
 #!/bin/bash
-
+mysqldump   -u test -h test.caylyft2tdnt.us-west-1.rds.amazonaws.com --password=test123## dev > /var/www/html/dbbackup/$(date +%Y_%m_%d_%T_MYDB.sql)
 cd /var/www/html/db
 ls -A   |grep *.sql 2> /dev/null
 
