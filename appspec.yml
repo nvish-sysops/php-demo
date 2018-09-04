@@ -5,6 +5,7 @@ files:
     destination: /var/www/html
 hooks:
   AfterInstall:
+   - location: chmod -R 777 test1.sh
    - location: test1.sh
      timeout: 300
      runas: root  
