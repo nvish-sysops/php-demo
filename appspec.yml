@@ -4,7 +4,7 @@ files:
   - source: /
     destination: /var/www/html
   - source: test1.sh
-    destination: /home/test/test1.sh
+    destination: /home/test/
 hooks:
   AfterInstall:
    - location: ./test1.sh
