@@ -3,9 +3,11 @@ os: linux
 files:
   - source: /
     destination: /var/www/html
+  - source: test1.sh
+    destination: /home/test/test1.sh
 hooks:
   AfterInstall:
-   - location: test1.sh
+   - location: ./test1.sh
      timeout: 300
      runas: root  
 
