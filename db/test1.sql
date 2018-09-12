@@ -7,4 +7,20 @@
 #SELECT * FROM dev.hpk_admin_roles;
 #SELECT * FROM dev.hpk_admin_user;
 #SELECT * FROM dev.hpk_app_subscriptions;
-SELECT table_name FROM information_schema.tables WHERE table_type = 'base table' AND table_schema='dev';
+#SELECT table_name FROM information_schema.tables WHERE table_type = 'base table' AND table_schema='dev';
+
+CREATE TABLE recipes (
+  recipe_id INT NOT NULL,
+  recipe_name VARCHAR(30) NOT NULL,
+  PRIMARY KEY (recipe_id),
+  UNIQUE (recipe_name)
+);
+
+INSERT INTO recipes
+    (recipe_id, recipe_name)
+VALUES
+    (1,"Tacos"),
+    (2,"Tomato Soup"),
+    (3,"Grilled Cheese");
+
+
